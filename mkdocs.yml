@@ -1,0 +1,28 @@
+site_name: MkDocs Website Demo
+site_url: https://demo.mattbuske.com
+site_description: This project serves as a companion to the Blog post explaining how I create, build and publish my website.
+site_author: Matthew E Buske
+copyright: Matthew E Buske 2023
+repo_url: https://github.com/mattbuske/mkdocs-website-demo
+extra:
+  version: 1.0.0
+plugins:
+ - blog
+ - search
+markdown_extensions:
+ - attr_list
+theme:
+    name: material
+    palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/light-switch
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/light-switch-off
+        name: Switch to light mode
